@@ -2,26 +2,38 @@
 ### A CommonJS-style promise library for iOS
 
 This fork adds underscore.m like chaining.
-See WhenTests.m
+The idea behind this fork is to add a more fluent interface for handling promises.
+This is inspired by the amazing [underscorem.org](https://github.com/robb/Underscore.m).
 
-No recommendation for production use of When.m
-Work in progress
+Current usage is demonstarted in [WhenTests.m](https://github.com/elm4ward/objc-promise/blob/master/objc-promiseTests/WhenTests.m):
+No recommendation for production use of When.m as the work is still in progress.
+
 
 ## Example
 
 ```objectivec
 
-// set up initial Deferred and chain with .then
+// Initital When
 [When block:^(Deferred *dfd) {
-	// fire resolve later
-	doDelayed(2, ^{
-        [dfd resolve:@"First"];
-    });
+  doDelayed(2, ^{
+    [dfd resolve:@"First"];
+  });
 }]
+// first callback
 .then(^(id resolve){
-        return @"first callback is done";
-    },^id(id error){
-        return nil;
+  return @"first callback is done";
+},^id(id error){
+  return nil;
+})
+// 2nd callback
+.then(^(id resolve){
+   return [Deferred deferredWithBlock:^(Deferred *dfd) {
+     doDelayed(3, ^{
+      [dfd resolve:@"second callback is done"];
+     });
+    }];
+},^id(id error){
+  return nil;
 })
 ```
 
