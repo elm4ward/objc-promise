@@ -1,7 +1,6 @@
 # objc-promise
 ### A CommonJS-style promise library for iOS
 
-This fork adds underscore.m like chaining.
 The idea behind this fork is to add a more fluent interface for handling promises.
 This is inspired by the amazing [underscorem.org](https://github.com/robb/Underscore.m).
 
