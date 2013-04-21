@@ -11,7 +11,9 @@
 @interface Deferred : Promise
 
 + (Deferred *)deferred;
++ (id)deferredWithBlock:(void(^)(Deferred* dfd))block;
 
+- (id)initWithBlock:(void(^)(Deferred* dfd))block;
 - (Promise *)promise;
 - (Promise *)resolve:(id)result;
 - (Promise *)reject:(NSError *)reason;

@@ -46,9 +46,22 @@
     return self;
 }
 
+- (id)initWithBlock:(void(^)(Deferred* dfd))block
+{
+    if (self = [super init]) {
+        block(self);
+    }
+    return self;
+}
+
 + (Deferred *)deferred
 {
     return [[Deferred alloc] init];
+}
+
++ (id)deferredWithBlock:(void(^)(Deferred* dfd))block;
+{
+    return [[Deferred alloc] initWithBlock:block];
 }
 
 - (Promise *)promise

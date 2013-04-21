@@ -20,6 +20,8 @@
 		7823C918162D3397000342B4 /* JoinedPromiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7823C917162D3397000342B4 /* JoinedPromiseTests.m */; };
 		7823C91B162D3A7C000342B4 /* DispatchPromiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7823C91A162D3A7C000342B4 /* DispatchPromiseTests.m */; };
 		7823C92C162E5A63000342B4 /* TimerPromiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7823C92B162E5A63000342B4 /* TimerPromiseTests.m */; };
+		9CA0B91317242D24001CD27C /* When.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0B91217242D24001CD27C /* When.m */; };
+		9CA0B91617242E40001CD27C /* WhenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0B91417242E40001CD27C /* WhenTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		7823C91A162D3A7C000342B4 /* DispatchPromiseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchPromiseTests.m; sourceTree = "<group>"; };
 		7823C92A162E5A63000342B4 /* TimerPromiseTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerPromiseTests.h; sourceTree = "<group>"; };
 		7823C92B162E5A63000342B4 /* TimerPromiseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerPromiseTests.m; sourceTree = "<group>"; };
+		9CA0B91117242D24001CD27C /* When.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = When.h; sourceTree = "<group>"; };
+		9CA0B91217242D24001CD27C /* When.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = When.m; sourceTree = "<group>"; };
+		9CA0B91417242E40001CD27C /* WhenTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhenTests.m; sourceTree = "<group>"; };
+		9CA0B91517242E40001CD27C /* WhenTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhenTests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,8 @@
 				7823C8C1162CEA6D000342B4 /* Deferred.m */,
 				7823C8C2162CEA6D000342B4 /* Promise.h */,
 				7823C8C3162CEA6D000342B4 /* Promise.m */,
+				9CA0B91117242D24001CD27C /* When.h */,
+				9CA0B91217242D24001CD27C /* When.m */,
 			);
 			path = "objc-promise";
 			sourceTree = "<group>";
@@ -154,6 +162,8 @@
 				7823C91A162D3A7C000342B4 /* DispatchPromiseTests.m */,
 				7823C92A162E5A63000342B4 /* TimerPromiseTests.h */,
 				7823C92B162E5A63000342B4 /* TimerPromiseTests.m */,
+				9CA0B91517242E40001CD27C /* WhenTests.h */,
+				9CA0B91417242E40001CD27C /* WhenTests.m */,
 			);
 			path = "objc-promiseTests";
 			sourceTree = "<group>";
@@ -266,6 +276,7 @@
 			files = (
 				7823C8C4162CEA6D000342B4 /* Deferred.m in Sources */,
 				7823C8C5162CEA6D000342B4 /* Promise.m in Sources */,
+				9CA0B91317242D24001CD27C /* When.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +289,7 @@
 				7823C918162D3397000342B4 /* JoinedPromiseTests.m in Sources */,
 				7823C91B162D3A7C000342B4 /* DispatchPromiseTests.m in Sources */,
 				7823C92C162E5A63000342B4 /* TimerPromiseTests.m in Sources */,
+				9CA0B91617242E40001CD27C /* WhenTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
